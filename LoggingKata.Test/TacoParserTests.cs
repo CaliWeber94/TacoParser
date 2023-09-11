@@ -8,8 +8,6 @@ namespace LoggingKata.Test
         [Fact]
         public void ShouldDoSomething()
         {
-            // TODO: Complete Something, if anything
-
             //Arrange
             var tacoParser = new TacoParser();
 
@@ -28,10 +26,6 @@ namespace LoggingKata.Test
         [InlineData("32.524378, -84.88839, Taco Bell Columbus...", -84.88839)]
         public void ShouldParseLongitude(string line, double expected)
         {
-            // TODO: Complete - "line" represents input data we will Parse to
-            //       extract the Longitude.  Your .csv file will have many of these lines,
-            //       each representing a TacoBell location
-
             //Arrange
             var tacoParser = new TacoParser();
 
@@ -42,7 +36,7 @@ namespace LoggingKata.Test
         }
 
 
-        //TODO: Create a test ShouldParseLatitude
+        
 
         [Theory]
         [InlineData("34.073638, -84.677017, Taco Bell Acwort...", 34.073638)]
@@ -51,8 +45,6 @@ namespace LoggingKata.Test
         [InlineData("32.524378, -84.88839, Taco Bell Columbus...", 32.524378)]
         public void ShouldParseLatitude(string line, double expected)
         {
-
-
             //Arrange
             var tacoParser = new TacoParser();
 
